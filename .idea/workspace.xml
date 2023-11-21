@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8c74830b-edae-43c4-be5b-4b02e66555a7" name="Changes" comment="Reusing instantiation">
+    <list default="true" id="8c74830b-edae-43c4-be5b-4b02e66555a7" name="Changes" comment="findByDepartment implementation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/dao/SellerDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/dao/SellerDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Application/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application/Program.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/dao/impl/SellerDaoJDBC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/dao/impl/SellerDaoJDBC.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -125,7 +125,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700593240789</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="findByDepartment implementation">
+      <option name="closed" value="true" />
+      <created>1700594591734</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1700594591734</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -147,6 +155,7 @@
     <MESSAGE value="SellerDaoJDBC and DaoFactory" />
     <MESSAGE value="findById implementation" />
     <MESSAGE value="Reusing instantiation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Reusing instantiation" />
+    <MESSAGE value="findByDepartment implementation" />
+    <option name="LAST_COMMIT_MESSAGE" value="findByDepartment implementation" />
   </component>
 </project>
