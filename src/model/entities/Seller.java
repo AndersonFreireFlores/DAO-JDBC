@@ -13,14 +13,17 @@ public class Seller implements Serializable {
     private Date birthDate;
     private Double baseSalary;
 
+    private Department dep;
+
     public Seller(){}
 
-    public Seller(Integer id, String name, String email, Date birthDate, Double baseSalary) {
+    public Seller(Integer id, String name, String email, Date birthDate, Double baseSalary, Department dep) {
         this.id = id;
         this.name = name;
         this.email = email;
         this.birthDate = birthDate;
         this.baseSalary = baseSalary;
+        this.dep = dep;
     }
 
     public Integer getId() {
@@ -63,17 +66,25 @@ public class Seller implements Serializable {
         this.baseSalary = baseSalary;
     }
 
+    public Department getDep() {
+        return dep;
+    }
+
+    public void setDep(Department dep) {
+        this.dep = dep;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Seller seller = (Seller) o;
-        return Objects.equals(id, seller.id) && Objects.equals(name, seller.name) && Objects.equals(email, seller.email) && Objects.equals(birthDate, seller.birthDate) && Objects.equals(baseSalary, seller.baseSalary);
+        return Objects.equals(id, seller.id) && Objects.equals(name, seller.name) && Objects.equals(email, seller.email) && Objects.equals(birthDate, seller.birthDate) && Objects.equals(baseSalary, seller.baseSalary) && Objects.equals(dep, seller.dep);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, name, email, birthDate, baseSalary);
+        return Objects.hash(id, name, email, birthDate, baseSalary, dep);
     }
 
     @Override
@@ -84,6 +95,7 @@ public class Seller implements Serializable {
                 ", email='" + email + '\'' +
                 ", birthDate=" + birthDate +
                 ", baseSalary=" + baseSalary +
+                ", dep=" + dep +
                 ']';
     }
 }
